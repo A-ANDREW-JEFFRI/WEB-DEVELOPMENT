@@ -1,0 +1,151 @@
+/* UNIVERSAL SELECTOR */
+*{
+    outline: none;
+    box-sizing: border-box;
+}
+/* HTML TAG */
+html{
+    scroll-behavior: smooth;
+}
+/* BODY TAG */
+body{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg,#00FFD1,#64b5f6,#f321d7 70%,#31C6D4) ; 
+}
+/* WEBKIT */
+::-webkit-scrollbar{
+    display: none;
+}
+/* NAVBAR */
+@keyframes move{
+    0%{margin-top:0;margin-left: 0;}
+    50%{margin-top:0;margin-left: 50px;}
+    100%{margin-top:0;margin-left: 100px;}
+}
+.title{
+    margin-left:30px ;
+    letter-spacing: 5px;
+    font-size: 20px;
+    animation: move 5s linear 1s infinite alternate;
+}
+.title span{
+    font-size: larger;
+    color: #FFEA11;
+}
+.navbar p{
+    font-variant: small-caps;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; 
+    border-bottom: 3px solid white;
+    border-radius: 40%;
+    border-color:white;
+}
+.navfunction
+{
+    margin-right: 30px;
+}
+.navbar  h1{
+    color: rgb(14, 14, 14);
+}
+.navfunction a{
+    display: inline;
+    padding: 10px; 
+    cursor: pointer;
+}
+.navfunction > a{
+    color: black;
+    text-decoration: none;
+}
+.navfunction > a:hover{
+    background-color: rgba(225,225,225/31%);
+    color: white;
+    font-weight: bolder;
+    box-shadow: 5px 5px 5px gray;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    border-radius: 10%;
+}
+/* HEADING */
+.heading_one{
+    font-size: 80px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading_one span{
+    color: yellow;
+}
+/* IMAGES */
+img{
+    width: 190px;
+    height: 190px;
+}
+/* PLAYER ONE AND TWO */
+.both_player{
+    display: flex;
+    justify-content:  space-evenly;
+}
+/* PLAYER ONE */
+.player_one{
+    position: relative;
+    left: 100px;
+}
+.player_one img{
+    border-radius: 40px;
+}
+.player_one h2{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+.player_one span{
+    margin-top: -10px;
+    font-size: 50px;
+    color: #FFEA11;
+}
+/* PLAYER TWO */
+.player_two{
+    position: relative;
+    right: 100px;
+}
+.player_two img{
+    border-radius: 40px;
+}
+.player_two h2{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+.player_two span{
+    margin-top: -10px;
+    font-size: 50px;
+    color: #FFEA11;
+}
+/* PLAY BUTTON */
+button{
+    background: transparent;
+    background-color: rgba(225,225,225/31%);
+    border-color: bisque;
+    font-size: 22px;
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    outline: none;
+    border-top: 1px soild BLACK;
+    opacity:  0.8  ;
+    box-shadow: 5px 5px 5px gray;
+}
+button:hover{
+    color: red;
+    background-color:white;
+    box-shadow: 5px 5px 5px gray;
+    opacity: 0.4;
+}

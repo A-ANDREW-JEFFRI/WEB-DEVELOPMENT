@@ -1,0 +1,145 @@
+/* UNIVERSAL SELECTOR */
+*{
+    outline: none;
+    box-sizing: border-box;
+}
+/* HTML TAG */
+html{
+    scroll-behavior: smooth;
+}
+/* BODY TAG */
+body{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg,#00FFD1,#64b5f6,#f321d7 70%,#31C6D4) ;
+}
+/* WEBKIT   */
+::-webkit-scrollbar{
+    display: none;
+}
+/* NAVBAR */
+@keyframes move{
+    0%{margin-top:0;margin-left: 0;}
+    50%{margin-top:0;margin-left: 50px;}
+    100%{margin-top:0;margin-left: 100px;}
+}
+.title{
+    margin-left:30px ;
+    letter-spacing: 5px;
+    font-size: 20px;
+    animation: move 5s linear 1s infinite alternate;
+}
+.title span{
+    font-size: larger;
+    color: #FFEA11;
+}
+.navbar p{
+    font-variant: small-caps;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; 
+    border-bottom: 3px solid white;
+    border-radius: 40%;
+    border-color:white;
+}
+.navfunction
+{
+    margin-right: 30px;
+}
+.navbar  h1{
+    color: rgb(14, 14, 14);
+}
+.navfunction a{
+    display: inline;
+    padding: 10px; 
+    cursor: pointer;
+}
+.navfunction > a{
+    color: black;
+    text-decoration: none;
+}
+.navfunction > a:hover{
+    background-color: rgba(225,225,225/31%);
+    color: white;
+    font-weight: bolder;
+    box-shadow: 5px 5px 5px gray;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    border-radius: 10%;
+}
+/* GAME NAME */
+.main_title{
+    margin-left:30px ;
+    letter-spacing: 5px;
+    font-size: 20px;
+    animation: move 5s linear 1s infinite alternate;
+    font-size: 70px;
+}
+.main_title span{
+    font-size: larger;
+    color: #FFEA11;
+}
+/* IMAGE OF THE PAGE */
+.sec_one img {
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+}
+/* THE BODY OF THE PAGE */
+.home{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.home .para{
+    font-size: 50px;
+    font-weight: bolder;
+    transform: rotate(355deg);
+}
+.para span{
+    color: #f321d7;
+}
+/* BUTTON */
+.btn{
+    background-color: rgba(225,225,225/31%);
+    border-left: 15px solid white;
+    border-top: 5px solid white;    
+    border-color: white;
+    border-radius: 40px;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+    position: relative;
+    left: 900px;
+    top: -70px;
+    padding: 10px;
+    animation: move 5s linear 1s infinite alternate;
+}
+.btn .span1{
+    font-size: larger;
+    color: #f321d7;
+}
+.btn .span2{
+    font-size: larger;
+    color:#FFEA11 ;
+}   
+.btn:hover{
+    background-color: rgba(225,225,225/31%);
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 40px;
+}
+.btn .span1:hover{
+    font-size: larger;
+    color: #FFEA11 ;
+}
+.btn .span2:hover{
+    font-size: larger;
+    color:#f321d7;
+}
+

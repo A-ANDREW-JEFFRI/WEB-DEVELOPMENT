@@ -1,0 +1,151 @@
+/* UNIVERSAL SELECTOR */
+*{
+    outline: none;
+    box-sizing: border-box;
+}
+/* HTML TAG */
+html{
+    scroll-behavior: smooth;
+}
+/* BODY TAG */
+body{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg,#00FFD1,#64b5f6,#f321d7 70%,#31C6D4) ;
+}
+/* WEBKIT */
+::-webkit-scrollbar{
+    display: none;
+}
+/* NAVBAR */
+@keyframes move{
+    0%{margin-top:0;margin-left: 0;}
+    50%{margin-top:0;margin-left: 50px;}
+    100%{margin-top:0;margin-left: 100px;}
+}
+.title{
+    margin-left:30px ;
+    letter-spacing: 5px;
+    font-size: 20px;
+    animation: move 5s linear 1s infinite alternate;
+}
+.title span{
+    font-size: larger;
+    color: #FFEA11;
+}
+.navbar p{
+    font-variant: small-caps;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; 
+    border-bottom: 3px solid white;
+    border-radius: 40%;
+}
+.navfunction
+{
+    margin-right: 30px;
+}
+.navbar  h1{
+    color: rgb(14, 14, 14);
+}
+.navfunction a{
+    display: inline;
+    padding: 10px; 
+    cursor: pointer;
+}
+.navfunction > a{
+    color: black;
+    text-decoration: none;
+}
+.navfunction > a:hover{
+    background-color: rgba(225,225,225/31%);
+    color: white;
+    font-weight: bolder;
+    box-shadow: 5px 5px 5px gray;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    border-radius: 10%;  
+}
+/* FORM */
+.form{
+    width: 400px;
+    height: 450px;
+    background-color: rgba(225,225,225/31%);
+    position: absolute;
+    top: 80px;
+    left: 430px;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    box-shadow:0 8px 32px 0 rgba(31,38,135,.37);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+input{
+    width: 340px;
+    height: 20px;
+    position: relative;
+    left: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(225,225,225,0.6);
+    margin-bottom: 20px;
+    margin-top: 5px;
+    color: black; 
+}
+::placeholder{
+    color: black;
+    opacity: 0.6;
+}
+label{
+    position: relative;
+    left: 30px; 
+}
+.form a{
+    text-decoration: none;
+    color: rgb(90, 15, 15);
+ }
+ .form a:hover{
+    text-decoration: none;
+    color: rgb(237, 176, 176);
+ }
+button{
+    background: transparent;
+    background-color: rgba(225,225,225/31%);
+    border-color: bisque;
+    font-size: 22px;
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    position: relative;
+    left: 115px;
+    top: 15px;
+    outline: none;
+    border-top: 1px soild white;
+    opacity:  0.8  ;
+    box-shadow: 5px 5px 5px gray;
+}
+button:hover{
+    color: red;
+    background-color:white;
+    box-shadow: 5px 5px 5px gray;
+    opacity: 0.4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
